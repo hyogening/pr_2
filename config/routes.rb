@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   root 'animal#index'
   get 'animal/index'
   get 'animal/info'
