@@ -1,0 +1,12 @@
+<h1>칼로리기록하기</h1>
+<% @every_post.each do |p| %>
+이름: <%= p.title %><br>
+칼로리양: <%= p.amount %><br>
+특징: <%= p.content %><br>
+먹은시간: <%= p.created_at.in_time_zone("Asia/Seoul").strftime("%Y년%m월%d일 %H시%M분%S초") %>
+    <a href="/a_update_view/<%= p.id %>">[수정]</a>
+    <a href="/a_destroy/<%= p.id %>">[삭제]</a>
+<hr>
+<% end %>
+
+<h2><a href="/">다시 글쓰기</a> </h2>

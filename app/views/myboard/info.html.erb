@@ -1,0 +1,11 @@
+<h1>작성된 글입니다.</h1>
+<% @every_post.each do |p| %>
+이름: <%= p.title %><br>
+장르: <%= p. username %><br>
+내용: <%= p. content %><br>
+    <a href="/c_update_view/<%= p.id %>">[수정]</a>
+    <a href="/c_destroy/<%= p.id %>">[삭제]</a>
+<hr>
+<% end %>
+<h2><a href="/">다시 글쓰기</a> </h2>
+

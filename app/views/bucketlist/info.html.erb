@@ -1,0 +1,10 @@
+<h1>기록된 버킷리스트</h1>
+
+<% @every_post.each do |p| %>
+이름: <%= p.title %><br>
+    <a href="/d_update_view/<%= p.id %>">[수정]</a>
+    <a href="/d_destroy/<%= p.id %>">[삭제]</a>
+<hr>
+<% end %>
+
+<h2><a href="/">다시 글쓰기</a> </h2>

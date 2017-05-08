@@ -1,0 +1,24 @@
+<div class="container">
+
+<h1>수정</h1>
+
+<form action="/b_update/<%= @one_post.id %>" method="POST">
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="title" placeholder="<%= @one_post.title %>" value=<%= @one_post.title %>>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" class="form-control" name="genre" placeholder="<%= @one_post.genre %>" value=<%= @one_post.genre %>>
+    </div>
+    
+    <div class="form-group">
+        <textarea class='form-control' name="content" placeholder="<% @one_post.content %> %" rows="10"><%= @one_post.content %></textarea></textarea>
+    </div>
+    
+    <button type="submit">기록하기</button>
+</form>
+    
+    
+</form>
+</div>

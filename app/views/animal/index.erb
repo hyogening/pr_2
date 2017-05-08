@@ -1,0 +1,86 @@
+<h1>버킷리스트</h1>
+
+<form action="/d_write" method="POST">
+    <div class="form-group">
+        <textarea class='form-control' name="title"  rows="10" cols="120"></textarea><br>
+    </div>
+    <button type="submit">저장하기</button>
+</form>
+
+    
+
+
+<h1>자유 게시판</h1>
+<form action="/c_write" method="POST">
+   
+    <div class="form-group">
+        <input type="text" class="form-control" name="title" placeholder="제목">
+        </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="이름">
+        </div>
+    <div class="form-group">
+        <textarea class='form-control' name="content" placeholder="내용" rows="10"></textarea>
+    </div>
+    <button type="submit">글쓰기</button>
+</form>
+
+
+
+<h1>동물사전</h1>
+
+<form action="/write" method="POST">
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="title" placeholder="소개할 동물 이름">
+    </div>
+    
+    <div class="form-group">
+        <textarea class='form-control' name="content" placeholder="특징" rows="10"></textarea>
+    </div>
+    
+    <button type="submit">저장하기</button>
+</form>
+
+
+
+
+<h1>오늘의 칼로리</h1>
+
+<form action="/a_write" method="POST">
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="title" placeholder="음식이름">
+    </div>
+    
+    <div class="form-group">
+        <input type="text" class="form-control" name="amount" placeholder="칼로리양">
+    </div>
+    
+    <div class="form-group">
+        <textarea class='form-control' name="content" placeholder="반성의 한마디" rows="10"></textarea>
+    </div>
+    
+    <button type="submit">기록하기</button>
+</form>
+
+
+
+<h1>인생영화기록하기</h1>
+
+<form action="/b_write" method="POST">
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="title" placeholder="영화이름">
+    </div>
+    
+    <div class="form-group">
+        <input type="text" class="form-control" name="genre" placeholder="장르">
+    </div>
+    
+    <div class="form-group">
+        <textarea class='form-control' name="content" placeholder="간단한 줄거리" rows="10"></textarea>
+    </div>
+    
+    <button type="submit">기록하기</button>
+</form>

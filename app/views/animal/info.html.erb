@@ -1,0 +1,11 @@
+<h1>동물사전</h1>
+
+<% @every_post.each do |p| %>
+이름: <%= p.title %><br>
+특징: <%= p.content %>
+    <a href="/update_view/<%= p.id %>">[수정]</a>
+    <a href="/destroy/<%= p.id %>">[삭제]</a>
+<hr>
+<% end %>
+
+<h2><a href="/">다시 글쓰기</a> </h2>
